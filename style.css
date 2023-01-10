@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+:root{
+    --blue: #0084FD;
+    --lightblue: #85ddff;
+    --lilla: #9792E4;
+    --dark: #333333;
+
+}
+
+.button{
+
+}
+
+.button--white{
+
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-header{
+    background-color: var(--blue);
+    padding: 19px 0;
+    color: white;
+}
+
+.header-nav{
+
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.main-header nav.row{
+    align-items: center;
+}
+
+.nav-item{
+    padding: 0 16px;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media only screen and (max-width:991px){
+    .hamburger{
+        display: block;
+    }
+
+    .header-nav{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #85ddff;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    min-height: 200px;
+}
+
+
+.col-3{
+    flex-basis: calc(100%/3);
+} 
+
+.col-2{
+    flex-basis: calc(100%*(2/3));
+}
+
+@media only screen and (max-width:575px){
+    .hero [class^="col-"]{
+        flex-basis: 100%;
+    }
+}
