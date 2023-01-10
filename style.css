@@ -47,6 +47,8 @@ a{
     flex-wrap: wrap;
 }
 
+/*HEADER*/
+
 .main-header{
     background-color: var(--blue);
     padding: 19px 0;
@@ -85,21 +87,45 @@ a{
     }
 }
 
+/*HERO*/
+
 .card{
-    background-color: #85ddff;
-    padding: 20px;
+    background-color:#85ddff;
     border: 2px solid;
     border-radius: 20px;
-    min-height: 200px;
+    min-height: 342px;
 }
 
+.hero .row{
+    margin-top: 50px;
+    gap: 24px;
+}
 
 .col-3{
-    flex-basis: calc(100%/3);
+    flex-basis: calc(100%/3 - 72px / 4);
 } 
 
 .col-2{
-    flex-basis: calc(100%*(2/3));
+    flex-basis: calc(100%*(2/3) - 12px);
+}
+
+.col-2>.card{
+    display: flex;
+}
+
+.col-3>.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-description{
+    padding: 40px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 @media only screen and (max-width:575px){
