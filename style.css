@@ -391,6 +391,7 @@ a{
 
 .testimonial .row{
     row-gap: 35px;
+    padding-bottom: 115px;
 }
 
 .card-testimonial img{
@@ -442,4 +443,48 @@ a{
     .card-testimonial__description{
         margin-top: 0;
     }
+}
+
+/*BENEFITS*/
+
+.benefits{
+    background-color: var(--lilla);
+    padding-top: 75px;
+}
+
+.benefits .row{
+    gap: 33px;
+}
+
+.col-6{
+    flex-basis: calc(100% / 3 - 66px / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 55px 40px 32px 35px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.col-6 h1{
+    font-size: 80px;
+    color: var(--lilla);
+}
+
+.col-6 h2{
+    color: var(--lilla);
+}
+
+.col-6 p{
+    line-height: 35px;
+}
+
+.button--viola{
+    background-color: var(--lilla);
+    width: 140px;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
 }
