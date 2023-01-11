@@ -363,3 +363,21 @@ a{
         margin-bottom: -100px;
     }
 }
+
+/*TESTIMONIAL*/
+
+.col-100 .card-testimonial{
+    display: flex;
+    align-items: center;
+}
+
+.card-testimonial{
+    background-color: var(--lilla);
+    color: white;
+}
+
+.card-testimonial img{
+    border-radius: 999px;
+    max-width: 200px;
+    line-height: 150px;
+}
